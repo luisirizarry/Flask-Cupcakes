@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+    <h1>Cupcakes!</h1>
+    <section class="cupcakes-page">
+        <ul class="all-cupcakes">
+            <!-- This is where the cupcakes will go -->
+
+        </ul>
+    </section>
+    <section class="form-page">
+        <h2>Cupcake Form</h2>
+        <div class="form-container">
+            <form class="cupcake-form">
+                <div class="form-group">
+                    <label for="flavor">Flavor</label>
+                    <input type="text" name="flavor" id="flavor" required>    
+                </div>
+                <div class="form-group">
+                    <label for="size">Size</label>
+                    <input type="text" name="size" id="size" required>    
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <input type="text" name="rating" id="rating" required>    
+                </div>
+                <div class="form-group">
+                    <label for="image">Image URL</label>
+                    <input type="text" name="image" id="image">    
+                </div>
+                <button class="add-cupcake">Add Cupcake</button>
+            </form>    
+        </div>    
+    </section>
+    
+{% endblock %}
